@@ -1,0 +1,103 @@
+// Types for lecture data
+export interface Lecture {
+  id: string;
+  title: string;
+  date: string; // Format: YYYY-MM-DD
+  time: string; // Format: HH:MM
+  endTime: string; // Format: HH:MM
+  location: {
+    name?: string;
+    street: string;
+    houseNumber: string;
+    zipCode: string;
+    city: string;
+    state: string;
+  };
+}
+
+// All German states
+export const germanStates = [
+  'Baden-Württemberg',
+  'Bayern',
+  'Berlin',
+  'Brandenburg',
+  'Bremen',
+  'Hamburg',
+  'Hessen',
+  'Mecklenburg-Vorpommern',
+  'Niedersachsen',
+  'Nordrhein-Westfalen',
+  'Rheinland-Pfalz',
+  'Saarland',
+  'Sachsen',
+  'Sachsen-Anhalt',
+  'Schleswig-Holstein',
+  'Thüringen'
+];
+
+// Sample lecture data
+export const lectures: Lecture[] = [
+  {
+    id: "fin-2025-01",
+    title: "Vermögensaufbau",
+    date: "2025-03-06",
+    time: "18:30",
+    endTime: "20:30",
+    location: {
+      street: "Kirchwies",
+      houseNumber: "4",
+      zipCode: "66119",
+      city: "Saarbrücken",
+      state: "Saarland"
+    },
+  },
+  {
+    id: "fin-2025-02",
+    title: "Vermögensaufbau",
+    date: "2025-03-13",
+    time: "18:30",
+    endTime: "20:30",
+    location: {
+      street: "Kirchwies",
+      houseNumber: "4",
+      zipCode: "66119",
+      city: "Saarbrücken",
+      state: "Saarland"
+    },
+  },
+    {
+    id: "fin-2025-03",
+    title: "Vermögensaufbau",
+    date: "2025-03-20",
+    time: "18:30",
+    endTime: "20:30",
+    location: {
+      street: "Kirchwies",
+      houseNumber: "4",
+      zipCode: "66119",
+      city: "Saarbrücken",
+      state: "Saarland"
+    },
+  },
+];
+
+// Get all available states from lectures
+export const getAvailableStates = (): string[] => {
+  // Return all German states, sorted alphabetically
+  return germanStates.sort();
+};
+
+// Format date to German format
+export const formatDate = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('de-DE', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+  });
+};
+
+// Format time (HH:MM)
+export const formatTime = (timeString: string): string => {
+  return timeString;
+};
