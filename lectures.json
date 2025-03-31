@@ -1,9 +1,9 @@
 [
   {
     "id": "fin-2025-01",
-    "title": "Vermögensaufbau",
-    "date": "2025-03-06",
-    "time": "18:30",
+    "title": "Angewandte Alltagsökonomie",
+    "date": "2025-04-03",
+    "time": "19:30",
     "endTime": "20:30",
     "location": {
       "street": "Kirchwies",
@@ -15,23 +15,9 @@
   },
   {
     "id": "fin-2025-02",
-    "title": "Vermögensaufbau",
-    "date": "2025-03-13",
-    "time": "18:30",
-    "endTime": "20:30",
-    "location": {
-      "street": "Kirchwies",
-      "houseNumber": "4",
-      "zipCode": "66119",
-      "city": "Saarbrücken",
-      "state": "Saarland"
-    }
-  },
-  {
-    "id": "fin-2025-03",
-    "title": "Vermögensaufbau",
-    "date": "2025-03-20",
-    "time": "18:30",
+    "title": "Angewandte Alltagsökonomie",
+    "date": "2025-04-17",
+    "time": "19:30",
     "endTime": "20:30",
     "location": {
       "street": "Kirchwies",
